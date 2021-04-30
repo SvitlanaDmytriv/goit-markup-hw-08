@@ -22,51 +22,87 @@
 		<!--header-->
 		<header class="header header__border ">
 			<div class="container header__container">
-				<nav class="header__menu">
-					<a href="./index.html" class="logo link"
-						>Web<span class="logo--dark">Studio</span></a
-					>
+				<a href="./index.html" class="logo link"
+					>Web<span class="logo--dark">Studio</span></a
+				>
+				<div class="header__menu">
+					<nav>
+						<ul class="site-nav list">
+							<li class="site-nav__item header__item">
+								<a href="./index.html" class="site-nav__link link">Студия</a>
+							</li>
+							<li class="site-nav__item header__item">
+								<a href="./portfolio.html" class="link site-nav__link current"
+									>Портфолио</a
+								>
+							</li>
+							<li class="site-nav__item header__item">
+								<a href="#contact" class="link site-nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
 
-					<ul class="site-nav header__site-nav list">
-						<li class="site-nav__item header__item">
-							<a href="./index.html" class="site-nav__link link "
-								>Студия</a
-							>
+					<ul class="auth-nav list">
+						<li class="auth-nav__item">
+							<a href="mailto:info@devstudio.com" class="link auth-nav__link">
+								<svg class="auth-nav__icon auth-nav__icon-email">
+									<use href="./images/svg-sprite/sprite.svg#icon-email"></use>
+								</svg>
+								info@devstudio.com
+							</a>
 						</li>
-						<li class="site-nav__item header__item">
-							<a href="./portfolio.html" class="link site-nav__link current"
-								>Портфолио</a
-							>
-						</li>
-						<li class="site-nav__item header__item">
-							<a href="#contact" class="link site-nav__link">Контакты</a>
+						<li class="auth-nav__item">
+							<a href="tel:+380961111111" class="link auth-nav__link">
+								<svg class="auth-nav__icon auth-nav__icon-smartphone">
+									<use
+										href="./images/svg-sprite/sprite.svg#icon-smartphone"
+									></use>
+								</svg>
+								+38 096 111 11 11
+							</a>
 						</li>
 					</ul>
-				</nav>
-
-				<ul class="auth-nav header__auth-nav list">
-					<li class="auth-nav__item list-item">
-						<a href="tel:+380961111111" class="link auth-nav__link">
-							<svg width="10" height="16" class="auth-nav__icon">
-								<use
-									href="./images/svg-sprite/sprite.svg#icon-smartphone"
-								></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-					<li class="auth-nav__item list-item">
-						<a href="mailto:info@devstudio.com" class="link auth-nav__link">
-							<svg width="16" height="12" class="auth-nav__icon">
-								<use href="./images/svg-sprite/sprite.svg#icon-email"></use>
-							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-				</ul>
+					<ul class="mobile-social-list list">
+						<li class="mobile-social-list__item">
+							<a
+								href=""
+								class="mobile-social-list__link link"
+								target="_blank"
+								rel=" noopener noreferrer "
+								>Instagram</a
+							>
+						</li>
+						<li class="mobile-social-list__item">
+							<a
+								href=""
+								class="mobile-social-list__link link"
+								target="_blank"
+								rel=" noopener noreferrer "
+								>Twitter</a
+							>
+						</li>
+						<li class="mobile-social-list__item">
+							<a
+								href=""
+								class="mobile-social-list__link link"
+								target="_blank"
+								rel=" noopener noreferrer "
+								>Facebook</a
+							>
+						</li>
+						<li class="mobile-social-list__item">
+							<a
+								href=""
+								class="mobile-social-list__link link"
+								target="_blank"
+								rel=" noopener noreferrer "
+								>LinkedIn</a
+							>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
-
 		<main>
 			<section class="examples">
 				<div class="container">
@@ -109,12 +145,15 @@
 						<li class="examples__item grid__item">
 							<a class="link" href="">
 								<div class="examples__work">
-									<img
-										src="./images/portfolio-images/web.jpg"
-										width="370"
-										height="294"
+									<picture>
+										<source srcset="./images/portfolio/desktop/portfolio-1desktop.jpg 1x, ./images/portfolio/desktop/portfolio-1desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+										<source srcset="./images/portfolio/tablet/portfolio-1tablet.jpg 1x, ./images/portfolio/tablet/portfolio-1tablet@2x.jpg 2x" media="(min-width: 768px)" />
+										<source srcset="./images/portfolio/mobile/portfolio-1mobile.jpg 1x, ./images/portfolio/mobile/portfolio-1mobile@2x.jpg 2x" media="(max-width: 767.98px)" />
+										<img
+										src="./images/portfolio/desktop/portfolio-1desktop.jpg"
+										width="450"
 										alt=""
-									/>
+									/></picture>
 									<div class="examples__overlay">
 										<p class="examples__overlay-text">
 											Технокряк это современная площадка распространения
@@ -134,12 +173,15 @@
 						<li class="examples__item grid__item">
 							<a class="link" href="">
 								<div class="examples__work">
-									<img
-										src="./images/portfolio-images/new-orlean-vs-golden-star.jpg"
-										width="370"
-										height="294"
+									<picture>
+										<source srcset="./images/portfolio/desktop/portfolio-2desktop.jpg 1x, ./images/portfolio/desktop/portfolio-2desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+										<source srcset="./images/portfolio/tablet/portfolio-2tablet.jpg 1x, ./images/portfolio/tablet/portfolio-2tablet@2x.jpg 2x" media="(min-width: 768px)" />
+										<source srcset="./images/portfolio/mobile/portfolio-2mobile.jpg 1x, ./images/portfolio/mobile/portfolio-2mobile@2x.jpg 2x" media="(max-width: 767.98px)" />
+										<img
+										src="./images/portfolio/desktop/portfolio-2desktop.jpg"
+										width="450"
 										alt=""
-									/>
+									/></picture>
 									<div class="examples__overlay">
 										<p class="examples__overlay-text">
 											Технокряк это современная площадка распространения
@@ -160,12 +202,15 @@
 						<li class="examples__item grid__item">
 							<a class="link" href="">
 								<div class="examples__work">
-									<img
-										src="./images/portfolio-images/example-3.jpg"
-										width="370"
-										height="294"
+									<picture>
+										<source srcset="./images/portfolio/desktop/portfolio-3desktop.jpg 1x, ./images/portfolio/desktop/portfolio-3desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+										<source srcset="./images/portfolio/tablet/portfolio-3tablet.jpg 1x, ./images/portfolio/tablet/portfolio-3tablet@2x.jpg 2x" media="(min-width: 768px)" />
+										<source srcset="./images/portfolio/mobile/portfolio-3mobile.jpg 1x, ./images/portfolio/mobile/portfolio-3mobile@2x.jpg 2x" media="(max-width: 767.98px)" />
+										<img
+										src="./images/portfolio/desktop/portfolio-3desktop.jpg"
+										width="450"
 										alt=""
-									/>
+									/></picture>
 									<div class="examples__overlay">
 										<p class="examples__overlay-text">
 											Технокряк это современная площадка распространения
@@ -184,12 +229,15 @@
 						<li class="examples__item grid__item">
 							<a class="link" href="">
 								<div class="examples__work">
-									<img
-										src="./images/portfolio-images/example-4.jpg"
-										width="370"
-										height="294"
+									<picture>
+										<source srcset="./images/portfolio/desktop/portfolio-4desktop.jpg 1x, ./images/portfolio/desktop/portfolio-4desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+										<source srcset="./images/portfolio/tablet/portfolio-4tablet.jpg 1x, ./images/portfolio/tablet/portfolio-4tablet@2x.jpg 2x" media="(min-width: 768px)" />
+										<source srcset="./images/portfolio/mobile/portfolio-4mobile.jpg 1x, ./images/portfolio/mobile/portfolio-4mobile@2x.jpg 2x" media="(max-width: 767.98px)" />
+										<img
+										src="./images/portfolio/desktop/portfolio-4desktop.jpg"
+										width="450"
 										alt=""
-									/>
+									/></picture>
 									<div class="examples__overlay">
 										<p class="examples__overlay-text">
 											Технокряк это современная площадка распространения
@@ -208,12 +256,15 @@
 						<li class="examples__item grid__item">
 							<a class="link" href="">
 								<div class="examples__work">
-									<img
-										src="./images/portfolio-images/example-5.jpg"
-										width="370"
-										height="294"
+									<picture>
+										<source srcset="./images/portfolio/desktop/portfolio-5desktop.jpg 1x, ./images/portfolio/desktop/portfolio-5desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+										<source srcset="./images/portfolio/tablet/portfolio-5tablet.jpg 1x, ./images/portfolio/tablet/portfolio-5tablet@2x.jpg 2x" media="(min-width: 768px)" />
+										<source srcset="./images/portfolio/mobile/portfolio-5mobile.jpg 1x, ./images/portfolio/mobile/portfolio-5mobile@2x.jpg 2x" media="(max-width: 767.98px)" />
+										<img
+										src="./images/portfolio/desktop/portfolio-5desktop.jpg"
+										width="450"
 										alt=""
-									/>
+									/></picture>
 									<div class="examples__overlay">
 										<p class="examples__overlay-text">
 											Технокряк это современная площадка распространения
@@ -232,12 +283,15 @@
 						<li class="examples__item grid__item">
 							<a class="link" href="">
 								<div class="examples__work">
-									<img
-										src="./images/portfolio-images/example-6.jpg"
-										width="370"
-										height="294"
+									<picture>
+										<source srcset="./images/portfolio/desktop/portfolio-6desktop.jpg 1x, ./images/portfolio/desktop/portfolio-6desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+										<source srcset="./images/portfolio/tablet/portfolio-6tablet.jpg 1x, ./images/portfolio/tablet/portfolio-6tablet@2x.jpg 2x" media="(min-width: 768px)" />
+										<source srcset="./images/portfolio/mobile/portfolio-6mobile.jpg 1x, ./images/portfolio/mobile/portfolio-6mobile@2x.jpg 2x" media="(max-width: 767.98px)" />
+										<img
+										src="./images/portfolio/desktop/portfolio-6desktop.jpg"
+										width="450"
 										alt=""
-									/>
+									/></picture>
 									<div class="examples__overlay">
 										<p class="examples__overlay-text">
 											Технокряк это современная площадка распространения
@@ -256,12 +310,15 @@
 						<li class="examples__item grid__item">
 							<a class="link" href="">
 								<div class="examples__work">
-									<img
-										src="./images/portfolio-images/example-7.jpg"
-										width="370"
-										height="294"
+									<picture>
+										<source srcset="./images/portfolio/desktop/portfolio-7desktop.jpg 1x, ./images/portfolio/desktop/portfolio-7desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+										<source srcset="./images/portfolio/tablet/portfolio-7tablet.jpg 1x, ./images/portfolio/tablet/portfolio-7tablet@2x.jpg 2x" media="(min-width: 768px)" />
+										<source srcset="./images/portfolio/mobile/portfolio-7mobile.jpg 1x, ./images/portfolio/mobile/portfolio-7mobile@2x.jpg 2x" media="(max-width: 767.98px)" />
+										<img
+										src="./images/portfolio/desktop/portfolio-7desktop.jpg"
+										width="450"
 										alt=""
-									/>
+									/></picture>
 									<div class="examples__overlay">
 										<p class="examples__overlay-text">
 											Технокряк это современная площадка распространения
@@ -280,12 +337,15 @@
 						<li class="examples__item grid__item">
 							<a class="link" href="">
 								<div class="examples__work">
-									<img
-										src="./images/portfolio-images/example-8.jpg"
-										width="370"
-										height="294"
+									<picture>
+										<source srcset="./images/portfolio/desktop/portfolio-8desktop.jpg 1x, ./images/portfolio/desktop/portfolio-8desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+										<source srcset="./images/portfolio/tablet/portfolio-8tablet.jpg 1x, ./images/portfolio/tablet/portfolio-8tablet@2x.jpg 2x" media="(min-width: 768px)" />
+										<source srcset="./images/portfolio/mobile/portfolio-8mobile.jpg 1x, ./images/portfolio/mobile/portfolio-8mobile@2x.jpg 2x" media="(max-width: 767.98px)" />
+										<img
+										src="./images/portfolio/desktop/portfolio-8desktop.jpg"
+										width="450"
 										alt=""
-									/>
+									/></picture>
 									<div class="examples__overlay">
 										<p class="examples__overlay-text">
 											Технокряк это современная площадка распространения
@@ -304,12 +364,15 @@
 						<li class="examples__item grid__item">
 							<a class="link" href="">
 								<div class="examples__work">
-									<img
-										src="./images/portfolio-images/example-9.jpg"
-										width="370"
-										height="294"
+									<picture>
+										<source srcset="./images/portfolio/desktop/portfolio-9desktop.jpg 1x, ./images/portfolio/desktop/portfolio-9desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+										<source srcset="./images/portfolio/tablet/portfolio-9tablet.jpg 1x, ./images/portfolio/tablet/portfolio-9tablet@2x.jpg 2x" media="(min-width: 768px)" />
+										<source srcset="./images/portfolio/mobile/portfolio-9mobile.jpg 1x, ./images/portfolio/mobile/portfolio-9mobile@2x.jpg 2x" media="(max-width: 767.98px)" />
+										<img
+										src="./images/portfolio/desktop/portfolio-9desktop.jpg"
+										width="450"
 										alt=""
-									/>
+									/></picture>
 									<div class="examples__overlay">
 										<p class="examples__overlay-text">
 											Технокряк это современная площадка распространения
