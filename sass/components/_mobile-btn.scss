@@ -31,6 +31,9 @@
 }
 
 .mobile-btn.is-open {
+	position: fixed;
+	top: 10px;
+	left: 15px;
 	.mobile-btn__menu {
 		display: none;
 	}

@@ -1,7 +1,9 @@
 .auth-nav {
+	display: flex;
+	
 	@media screen and (max-width: 767.98px) {
 		& {
-			
+			flex-direction: column-reverse;
 			margin-bottom: 64px;
 		}
 	}
@@ -9,8 +11,13 @@
 		margin-left: auto;
 	}
 
+	@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+		flex-direction: column;
+	}
+
 	@media screen and (min-width: 1200px) {
 		display: flex;
+
 	}
 }
 
@@ -104,9 +111,9 @@
 .auth-nav__mail {
 	@media screen and (max-width: 767.98px) {
 		& {
-			margin-bottom: 32px;
-			font-size: 34px;
-			color: var(--accent-color);
+			font-size: 24px;
+			
+			color: #757575;
 		}
 	}
 }
@@ -114,9 +121,10 @@
 .auth-nav__phone {
 	@media screen and (max-width: 767.98px) {
 		& {
-			font-size: 24px;
-
-			color: #757575;
+			margin-bottom: 32px;
+			font-size: 34px;
+			 
+			color: var(--accent-color);
 		}
 	}
 }
