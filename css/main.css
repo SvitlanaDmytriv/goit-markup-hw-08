@@ -146,7 +146,7 @@ img {
 .mobile-btn.is-open {
   position: fixed;
   top: 10px;
-  left: 15px;
+  right: 15px;
 }
 
 .mobile-btn.is-open .mobile-btn__menu {
