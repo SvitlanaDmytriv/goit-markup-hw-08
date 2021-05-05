@@ -30,13 +30,7 @@
 
 .team__content {
 	text-align: center;
-	padding: 30px 74px 24px;
-
-	@media screen and (min-width: 1200px) {
-		& {
-			padding: 30px 32px;
-		}
-	}
+	padding: 30px;
 }
 
 .team__title {
